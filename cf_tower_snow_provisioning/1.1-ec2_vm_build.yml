@@ -1,0 +1,24 @@
+---
+# Create a simple VM
+# It will create with the default security group which will by rule no outside world access de facto
+# So in other to ssh / http to the server it will require configure the proper security groups.
+
+- name: Create a simple VM instance
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  vars:
+    key_name: "{{ my_key_name }}"
+    instance_type: t2.micro
+    image: ami-ac442ac3
+    wait: yes
+    count: 1
+    vpc_subnet_id: subnet-23af3748
+    assign_public_ip: yes
+    group_id: "{{ group_id }}"
+    region: eu-central-1
+    instance_tags:
+    app: "{{  app_name }}"
+  roles:
+  - ec2_vm_build
