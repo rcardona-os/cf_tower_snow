@@ -10,14 +10,14 @@
 
   vars:
     key_name: "{{ my_key_name }}"
-    instance_type: t2.micro
-    image: ami-ac442ac3
+    instance_type: "{{ instance_type }}"
+    image: "{{ image }}"
     wait: yes
-    count: 1
-    vpc_subnet_id: subnet-23af3748
+    count: "{{ count }}"
+    vpc_subnet_id: "{{ vpc_subnet_id }}"
     assign_public_ip: yes
     group_id: "{{ group_id }}"
-    region: eu-central-1
+    region: "{{ region }}"
     instance_tags:
     app: "{{  app_name }}"
   roles:
