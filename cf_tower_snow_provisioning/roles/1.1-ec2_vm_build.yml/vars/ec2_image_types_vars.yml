@@ -1,29 +1,9 @@
-oses:
-  Amazon Linux 2:
-    tier: free
-    offer: Linux Server
-    virtulization_type: hvm
-    ami_id: ami-02ea8f348fa28c108
-  Amazon Linux:
-    tier: free
-    offer: Linux Server
-    virtulization_type: hvm
-    ami_id: ami-0233214e13e500f77
-  Red Hat Enterprise Linux 7.5:
-    tier: free
-    offer: RHEL Server
-    virtulization_type: hvm
-    ami_id: ami-c86c3f23
-  Ubuntu Server 18.04:
-    tier: free
-    offer: Ubuntu Server
-    virtulization_type: hvm
-    ami_id: ami-0bdf93799014acdc4
-  Microsoft Windows Server 2016 Base:
-    tier: free
-    offer: Windows Server
-    virtulization_type: hvm
-    ami_id: ami-06af8c775c56b30ca
+images:
+  Amazon Linux 2: ami-02ea8f348fa28c108
+  Amazon Linux: ami-0233214e13e500f77
+  Red Hat Enterprise Linux 7.5: ami-c86c3f23
+  Ubuntu Server 18.04: ami-0bdf93799014acdc4
+  Microsoft Windows Server 2016 Base: ami-06af8c775c56b30ca
 
 
   
