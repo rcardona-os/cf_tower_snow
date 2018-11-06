@@ -9,15 +9,6 @@
   gather_facts: no
 
   vars:
-    key_name: "{{ my_key_name }}"
-    instance_type: "{{ instance_type }}"
-    image: "{{ image }}"
-    wait: yes
-    count: "{{ count }}"
-    vpc_subnet_id: "{{ vpc_subnet_id }}"
-    assign_public_ip: yes
-    group_id: "{{ group_id }}"
-    region: "{{ region }}"
     instance_tags:
       app: "{{  app_name }}"
   roles:
