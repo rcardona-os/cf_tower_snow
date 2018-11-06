@@ -1,0 +1,11 @@
+- name: Launching ec2_vm_destroy
+  hosts: all
+  connection: local
+  gather_facts: False
+
+  vars:
+    state: 'absent'
+    instance_ids: '{{ ec2.instance_ids }}'
+
+  roles:
+  - ec2_vm_destroy
