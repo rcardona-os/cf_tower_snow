@@ -1,21 +1,29 @@
 oses:
-  CentOS 7.3:
-    sku: 7.3
-    publisher: OpenLogic
-    offer: CentOS
-    type: Linux
-  RHEL 7.3:
-    sku: 7.3
-    publisher: Redhat
-    offer: RHEL
-    type: Linux
-  Windows Datacenter 2016:
-    sku: 2016-Datacenter
-    publisher: MicrosoftWindowsServer
-    offer: WindowsServer
-    type: Windows
-  Windows Datacenter 2012 R2:
-    sku: 2012-R2-Datacenter
-    publisher: MicrosoftWindowsServer
-    offer: WindowsServer
-    type: Windows
+  Amazon Linux 2:
+    tier: free
+    offer: Linux Server
+    virtulization_type: hvm
+    ami_id: ami-02ea8f348fa28c108
+  Amazon Linux:
+    tier: free
+    offer: Linux Server
+    virtulization_type: hvm
+    ami_id: ami-0233214e13e500f77
+  Red Hat Enterprise Linux 7.5:
+    tier: free
+    offer: RHEL Server
+    virtulization_type: hvm
+    ami_id: ami-c86c3f23
+  Ubuntu Server 18.04:
+    tier: free
+    offer: Ubuntu Server
+    virtulization_type: hvm
+    ami_id: ami-0bdf93799014acdc4
+  Microsoft Windows Server 2016 Base:
+    tier: free
+    offer: Windows Server
+    virtulization_type: hvm
+    ami_id: ami-06af8c775c56b30ca
+
+
+  
