@@ -19,6 +19,6 @@
     group_id: "{{ group_id }}"
     region: "{{ region }}"
     instance_tags:
-    app: "{{  app_name }}"
+      app: "{{  app_name }}"
   roles:
   - ec2_vm_build
