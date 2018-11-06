@@ -1,4 +1,4 @@
 instance_types:
-  t2.micro
-  t2.small
-  t2.medium
+  micro: t2.micro
+  small: t2.small
+  medium: t2.medium
