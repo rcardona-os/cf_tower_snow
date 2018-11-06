@@ -1,7 +1,5 @@
 ---
 # Create a simple VM
-# It will create with the default security group which will by rule no outside world access de facto
-# So in other to ssh / http to the server it will require configure the proper security groups.
 
 - name: Create a simple VM instance
   hosts: localhost
