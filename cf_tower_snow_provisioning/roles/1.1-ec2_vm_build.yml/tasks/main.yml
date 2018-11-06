@@ -1,0 +1,5 @@
+- name: "Get playbook variables"
+  include_vars:
+    dir: 'vars'
+    extensions: ['yml']
+
