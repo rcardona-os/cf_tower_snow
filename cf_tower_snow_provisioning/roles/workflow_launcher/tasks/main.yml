@@ -1,18 +1,20 @@
 ---
-- name: Get encrypted variables
-  include_vars: wf_launcher_vars.yml
+- hosts: localhost #ansible-tower
+  connection: local
+  tasks:
 
-- name: Job Template to launch a Workflow Job Template
-  uri:
-    url: https://{{ ansible_tower_ip }}/api/v1/workflow_job_templates/{{ workflow_job_template_id }}/launch/
-    method: POST
-    user: "{{ tower_user }}"
-    password: "{{ tower_pass }}"
-    body:
-      extra_vars:
-        launched_from: CloudForms
-    body_format: json
-    validate_certs: False
-    headers:
-      Content-Type: "application/json"
-    status_code: 200, 201
+  - name: Get encrypted variables
+    include_vars: wf_launcher_vars.yml
+
+  - name: Job Template to launch a Workflow Job Template
+    uri:
+      url: https://{{ ansible_tower_ip }}/api/v1/workflow_job_templates/{{ workflow_job_template_id }}/launch/
+      method: POST
+      user: "{{ tower_user }}"
+      password: "{{ tower_pass }}"
+      body:
+        extra_vars: launched_from: CloudForms
+      body_format: json
+      validate_certs: False
+      HEADER_Content-Type: "application/json"
+      status_code: 200, 201
