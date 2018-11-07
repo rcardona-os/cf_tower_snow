@@ -11,7 +11,7 @@
           extra_vars: "launched_from: CloudForms Mijo"
         body_format: json
         validate_certs: False
-        HEADER_Content-Type: "application/json"
+        headers_Content-Type: "application/json"
         status_code: 200, 201
   
   #vars:
