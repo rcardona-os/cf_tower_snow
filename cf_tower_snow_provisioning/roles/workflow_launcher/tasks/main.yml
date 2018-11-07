@@ -13,7 +13,7 @@
       user: "{{ tower_user }}"
       password: "{{ tower_pass }}"
       body:
-        extra_vars: launched_from: CloudForms
+        extra_vars: "launched_from: CloudForms"
       body_format: json
       validate_certs: False
       HEADER_Content-Type: "application/json"
