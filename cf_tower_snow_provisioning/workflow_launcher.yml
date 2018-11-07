@@ -6,9 +6,9 @@
       uri:
         url: https://tower/api/v1/workflow_job_templates/9/launch/
         method: POST
-        user: admin
-        password: r3dh4t1!
         body:
+          user: admin
+          password: r3dh4t1!
           extra_vars: "launched_from: CloudForms"
         body_format: json
         validate_certs: False
