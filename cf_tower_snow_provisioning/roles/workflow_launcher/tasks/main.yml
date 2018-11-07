@@ -1,6 +1,6 @@
 ---
-- name: Get encrypted variables
-  include_vars: wf_launcher_vars.yml
+#- name: Get encrypted variables
+#  include_vars: wf_launcher_vars.yml
 
 - name: Job Template to launch a Workflow Job Template
   uri:
