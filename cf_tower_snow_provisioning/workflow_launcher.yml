@@ -4,7 +4,7 @@
   tasks:
     - name: Job Template to launch a Workflow Job Template (as a workaround, waiting for CloudForms 4.5)
       uri:
-        url: https://tower/api/v2/workflow_job_templates/9/launch/
+        url: https://10.154.0.2/api/v2/workflow_job_templates/9/launch/
         method: POST
         body:
           user: admin
