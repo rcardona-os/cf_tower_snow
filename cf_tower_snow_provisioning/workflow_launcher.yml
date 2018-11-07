@@ -7,9 +7,7 @@
         url: https://10.154.0.2/api/v2/workflow_job_templates/9/launch/
         method: POST
         body:
-          user: admin
-          password: r3dh4t1!
-          extra_vars: "launched_from: CloudForms"
+          extra_vars: "launched_from: CloudForms\nuser: admin\npassword: r3dh4t1!"
         body_format: json
         validate_certs: False
         HEADER_Content-Type: "application/json"
