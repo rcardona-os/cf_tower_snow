@@ -2,13 +2,6 @@
 - hosts: localhost #ansible-tower
   connection: local
 
-  vars:
-    ansible_tower_ip: 10.154.0.2
-    job_template_id: 9
-    tower_user: admin
-    tower_pass: r3dh4t1!
-
-
   tasks:
     - name: Job Template to launch a Workflow Job Template (as a workaround, waiting for CloudForms 4.5)
       uri:
