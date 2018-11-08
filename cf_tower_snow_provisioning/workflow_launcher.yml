@@ -15,7 +15,7 @@
         status_code: 200, 201
         force_basic_auth: true
         body:
-          extra_vars: "launched_from: CloudForms Mijo\nuser: admin\npassword: r3dh4t1!"
+          extra_vars: "launched_from: CloudForms"
 
 
   #roles:
