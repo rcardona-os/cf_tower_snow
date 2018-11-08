@@ -4,14 +4,14 @@
 
 - name: Job Template to launch a Workflow Job Template (as a workaround, waiting for CloudForms 4.5)
   uri:
-  url: https://{{ ansible_tower_ip }}/api/v2/workflow_job_templates/{{ job_template_id }}/launch/
-  method: POST
-  user: "{{ tower_user }}"
-  password: "{{ tower_pass }}"
-  body_format: json
-  validate_certs: False
-  headers_Content-Type: "application/json"
-  status_code: 200, 201
-  force_basic_auth: true
-  body:
-    extra_vars: "launched_from: CloudForms"
+    url: https://{{ ansible_tower_ip }}/api/v2/workflow_job_templates/{{ job_template_id }}/launch/
+    method: POST
+    user: "{{ tower_user }}"
+    password: "{{ tower_pass }}"
+    body_format: json
+    validate_certs: False
+    headers_Content-Type: "application/json"
+    status_code: 200, 201
+    force_basic_auth: true
+    body:
+      extra_vars: "launched_from: CloudForms"
